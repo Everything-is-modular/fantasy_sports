@@ -16,7 +16,7 @@ class App extends React.Component{
     render(){
         return(
             <div className='ui container' style ={{'backgroundImage':`url(https://www.leaguex.com/assets/images/landing/banner/banner_bg.webp)`,'backgroundRepeat': 'repeat','backgroundSize':'1440px 900px','width':'100%' , 'height':'inherit','z-index': '100','position':'sticky','color':'#f5e1b2'}}> 
-                
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
                 <BrowserRouter>
                     <div>
                     <Route path='/' exact component={Upcoming_Matches} />

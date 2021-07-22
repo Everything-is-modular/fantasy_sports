@@ -9,7 +9,7 @@ class Create_Team_Card extends React.Component{
     isDisable = (player) => {
         if(this.props.filled_team1==true && player.team_name==this.props.selected_team1){
             return true
-        }
+        } 
         if(this.props.filled_team2==true && player.team_name==this.props.selected_team2){
             return true
         }

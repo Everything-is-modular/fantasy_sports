@@ -143,12 +143,16 @@ class Create_Team extends React.Component{
         if(local_selected_users_team[`${local_selected_team1}`] !== undefined){
             if(local_selected_users_team[`${local_selected_team1}`].length===7){
                 this.setState({filled_team1:true})
+            } else {
+                this.setState({filled_team1:false})
             }
         }
 
         if(local_selected_users_team[`${local_selected_team2}`] !==undefined){
             if(local_selected_users_team[`${local_selected_team2}`].length===7){
             this.setState({filled_team2:true})
+            } else {
+                this.setState({filled_team2:false})
             }
         }
     }
